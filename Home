@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liquor List - Home</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#browse">Browse for Bottles</a></li>
+            <li><a href="#search">Search for Liquor</a></li>
+            <li><a href="#profile">Profile</a></li>
+            <li><a href="#log">Log a Drink</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container">
+        <!-- Review Feed -->
+        <section id="feed">
+            <h1>Recent Reviews</h1>
+            
+            <!-- Review Post -->
+            <div class="review-post">
+                <div class="user-info">
+                    <img src="user1.jpg" alt="User Profile Picture" class="profile-pic">
+                    <span class="username">User1</span>
+                </div>
+                <div class="review-content">
+                    <h2>Beverage Name</h2>
+                    <p>This is a review text. The user shares their thoughts on the beverage.</p>
+                    <div class="rating">Rating: ★★★★★☆☆☆☆☆</div>
+                    <img src="beverage1.jpg" alt="Beverage Image" class="beverage-pic">
+                </div>
+                <div class="interaction-buttons">
+                    <button class="like-btn">Like</button>
+                    <button class="dislike-btn">Dislike</button>
+                    <button class="comment-btn">Comment</button>
+                </div>
+                <div class="comments-section">
+                    <!-- Comments will be dynamically loaded here -->
+                </div>
+            </div>
+            
+            <!-- More review posts can be added in a similar way -->
+        </section>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
