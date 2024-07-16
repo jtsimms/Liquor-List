@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liquor List - Profile</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Profile</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="browse.html">Browse for Bottles</a></li>
+                <li><a href="search.html">Search for Liquor</a></li>
+                <li><a href="profile.html">Profile</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="user-info">
+            <h2>My Profile</h2>
+            <p>Username: JohnDoe</p>
+            <p>Email: johndoe@example.com</p>
+        </section>
+
+        <section id="favorites">
+            <h2>Favorites</h2>
+            <!-- Sample favorite -->
+            <div class="favorite">
+                <img src="favorite_image.jpg" alt="Favorite Drink Image">
+                <h3>Favorite Drink Name</h3>
+                <p>Type: Beer</p>
+                <p>Rating: ★★★★☆</p>
+                <a href="liquor_looksee.html">View Details</a>
+            </div>
+            <!-- Add more favorites here -->
+        </section>
+
+        <section id="buzz-buddies">
+            <h2>Buzz Buddies</h2>
+            <!-- Sample friend -->
+            <div class="buzz-buddy">
+                <p>Jane Doe</p>
+                <button>Add Friend</button>
+            </div>
+            <!-- Add more buzz buddies here -->
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Liquor List. All rights reserved.</p>
+    </footer>
+</body>
+</html>
