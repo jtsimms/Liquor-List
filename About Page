@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liquor List - About</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>About Liquor List</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="browse.html">Browse for Bottles</a></li>
+                <li><a href="search.html">Search for Liquor</a></li>
+                <li><a href="profile.html">Profile</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="about-content">
+            <h2>About Us</h2>
+            <p>Liquor List is your ultimate app for discovering, logging, and reviewing alcoholic beverages. Whether you’re a beer enthusiast, a wine connoisseur, or a liquor lover, we have something for you!</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Liquor List. All rights reserved.</p>
+    </footer>
+</body>
+</html>
