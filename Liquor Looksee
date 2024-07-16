@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liquor List - Liquor Looksee</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Liquor Looksee</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="browse.html">Browse for Bottles</a></li>
+                <li><a href="search.html">Search for Liquor</a></li>
+                <li><a href="profile.html">Profile</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="liquor-details">
+            <h2>Liquor Name</h2>
+            <img src="liquor_image.jpg" alt="Liquor Image">
+            <p>Type: Liquor</p>
+            <p>Rating: ★★★★☆</p>
+            <p>Price: $50.00</p>
+            <p>Description: A fine liquor with a smooth taste and rich aroma.</p>
+            <h3>Find This Liquor Near You</h3>
+            <p>Closest Place: Liquor Store ABC</p>
+            <p>Address: 123 Main St, City, Country</p>
+            <button>Log Drink</button>
+            <button>Buy Now</button>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Liquor List. All rights reserved.</p>
+    </footer>
+</body>
+</html>
