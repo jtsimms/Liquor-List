@@ -7,26 +7,33 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <nav>
-        <div class="container">
-            <div class="logo"><a href="/">Liquor List</a></div>
-            <div class="menu">
-                <a href="/">Home</a>
-                <a href="/browse.html">Browse for Bottles</a>
-                <a href="/search.html">Search for Liquor</a>
-                <a href="/log.html">Log a Drink</a>
-                <a href="/profile.html">Profile</a>
-            </div>
-        </div>
-    </nav>
-    <main class="main-page">
-        <h1>Welcome to Liquor List!</h1>
-        <div class="search-bar">
-            <input type="text" placeholder="Search for bottles, reviews, or friends...">
-        </div>
-        <div class="social-feed">
-            <!-- Social feed content will go here -->
-        </div>
+    <header>
+        <h1>Liquor List</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="browse.html">Browse for Bottles</a>
+            <a href="search.html">Search for Liquor</a>
+            <a href="liquor-looksee.html">Liquor Looksee</a>
+            <a href="log.html">Log a Drink</a>
+            <a href="profile.html">Profile</a>
+        </nav>
+    </header>
+    <main>
+        <section class="feed">
+            <h2>Social Feed</h2>
+            <article class="review">
+                <h3>Username</h3>
+                <p>Review content here...</p>
+                <div class="rating">
+                    <!-- Rating stars will be inserted here -->
+                </div>
+                <div class="actions">
+                    <button>Like</button>
+                    <button>Dislike</button>
+                    <button>Comment</button>
+                </div>
+            </article>
+        </section>
     </main>
     <footer>
         <p>&copy; 2024 Liquor List. All rights reserved.</p>
