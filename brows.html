@@ -3,27 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Liquor List | Browse for Bottles</title>
+    <title>Browse Liquors</title>
     <link rel="stylesheet" href="styles.css">
-    <script defer src="js/browse.js"></script>
 </head>
 <body>
     <header>
-        <h1>Liquor List</h1>
+        <h1>Browse Liquors</h1>
         <nav>
             <a href="index.html">Home</a>
-            <a href="browse.html">Browse for Bottles</a>
-            <a href="search.html">Search for Liquor</a>
-            <a href="log.html">Log a Drink</a>
+            <a href="browse.html">Browse Liquors</a>
+            <a href="search.html">Search Liquors</a>
             <a href="profile.html">Profile</a>
         </nav>
     </header>
-    <main id="browse">
-        <h2>Browse for Bottles</h2>
-        <div id="liquors"></div>
+    <main id="content">
+        <ul id="liquors-list">
+            <!-- List of liquors will be injected here by JavaScript -->
+        </ul>
     </main>
-    <footer>
-        <p>&copy; 2024 Liquor List. All rights reserved.</p>
-    </footer>
+    <script src="js/browse.js"></script>
 </body>
 </html>
