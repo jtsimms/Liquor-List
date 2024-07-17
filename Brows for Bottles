@@ -7,23 +7,27 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <nav>
-        <div class="container">
-            <div class="logo"><a href="/">Liquor List</a></div>
-            <div class="menu">
-                <a href="/">Home</a>
-                <a href="/browse.html">Browse for Bottles</a>
-                <a href="/search.html">Search for Liquor</a>
-                <a href="/log.html">Log a Drink</a>
-                <a href="/profile.html">Profile</a>
-            </div>
-        </div>
-    </nav>
-    <main class="browse-page">
-        <h2>Browse for Bottles</h2>
-        <div class="bottle-list">
-            <!-- Bottle items will go here -->
-        </div>
+    <header>
+        <h1>Liquor List</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="browse.html">Browse for Bottles</a>
+            <a href="search.html">Search for Liquor</a>
+            <a href="liquor-looksee.html">Liquor Looksee</a>
+            <a href="log.html">Log a Drink</a>
+            <a href="profile.html">Profile</a>
+        </nav>
+    </header>
+    <main>
+        <section class="browsing">
+            <h2>Browse for Bottles</h2>
+            <article class="bottle">
+                <img src="bottle-image.jpg" alt="Bottle Image">
+                <h3>Bottle Name</h3>
+                <p>Description of the bottle...</p>
+                <a href="liquor-looksee.html">View Details</a>
+            </article>
+        </section>
     </main>
     <footer>
         <p>&copy; 2024 Liquor List. All rights reserved.</p>
