@@ -7,36 +7,37 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <h1>Liquor Looksee</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="browse.html">Browse for Bottles</a></li>
-                <li><a href="search.html">Search for Liquor</a></li>
-                <li><a href="profile.html">Profile</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <main>
-        <section id="liquor-details">
-            <h2>Liquor Name</h2>
-            <img src="liquor_image.jpg" alt="Liquor Image">
-            <p>Type: Liquor</p>
-            <p>Rating: ★★★★☆</p>
-            <p>Price: $50.00</p>
-            <p>Description: A fine liquor with a smooth taste and rich aroma.</p>
-            <h3>Find This Liquor Near You</h3>
-            <p>Closest Place: Liquor Store ABC</p>
-            <p>Address: 123 Main St, City, Country</p>
-            <button>Log Drink</button>
-            <button>Buy Now</button>
-        </section>
+    <nav>
+        <div class="container">
+            <div class="logo"><a href="/">Liquor List</a></div>
+            <div class="menu">
+                <a href="/">Home</a>
+                <a href="/browse.html">Browse for Bottles</a>
+                <a href="/search.html">Search for Liquor</a>
+                <a href="/log.html">Log a Drink</a>
+                <a href="/profile.html">Profile</a>
+            </div>
+        </div>
+    </nav>
+    <main class="liquor-looksee-page">
+        <h2>Liquor Looksee</h2>
+        <div class="liquor-details">
+            <div class="liquor-image">
+                <img src="images/liquor.jpg" alt="Liquor Image">
+            </div>
+            <div class="liquor-info">
+                <h3>Liquor Name</h3>
+                <p>Type: Liquor</p>
+                <p>Brand: Brand Name</p>
+                <p>ABV: 40%</p>
+                <p>Description: This is a detailed description of the liquor.</p>
+                <p class="liquor-rating">Rating: ★★★★★★★☆☆☆ (7/10)</p>
+                <div class="availability">
+                    <p>Available at: Closest Store Name</p>
+                </div>
+            </div>
+        </div>
     </main>
-
     <footer>
         <p>&copy; 2024 Liquor List. All rights reserved.</p>
     </footer>
