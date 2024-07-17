@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Liquor List | Home</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="styles.css">
     <link rel="manifest" href="/manifest.json">
+    <script defer src="js/index.js"></script>
     <script>
         if ('serviceWorker' in navigator) {
             window.addEventListener('load', () => {
@@ -26,20 +27,23 @@
         <nav>
             <a href="index.html">Home</a>
             <a href="browse.html">Browse for Bottles</a>
-            <a href="search.html">Search</a>
+            <a href="search.html">Search for Liquor</a>
             <a href="log.html">Log a Drink</a>
             <a href="profile.html">Profile</a>
         </nav>
     </header>
     <main>
         <section id="feed">
-            <h2>Homepage Feed</h2>
+            <h2>Welcome to Liquor List!</h2>
+            <p>Browse, search, and review your favorite alcoholic beverages.</p>
             <div id="no-reviews" style="display: none;">
                 <p>Looks a little quiet here. Get the party started!</p>
             </div>
             <div id="reviews"></div>
         </section>
     </main>
-    <script src="js/index.js"></script>
+    <footer>
+        <p>&copy; 2024 Liquor List. All rights reserved.</p>
+    </footer>
 </body>
 </html>
