@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Liquor List - Search for Liquor</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Liquor List | Search for Liquor</title>
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
     <header>
@@ -12,28 +12,20 @@
         <nav>
             <a href="index.html">Home</a>
             <a href="browse.html">Browse for Bottles</a>
-            <a href="search.html">Search for Liquor</a>
-            <a href="liquor-looksee.html">Liquor Looksee</a>
+            <a href="search.html">Search</a>
             <a href="log.html">Log a Drink</a>
             <a href="profile.html">Profile</a>
         </nav>
     </header>
     <main>
-        <section class="search">
+        <section id="search">
             <h2>Search for Liquor</h2>
             <form>
-                <input type="text" placeholder="Search for liquor">
+                <input type="text" placeholder="Search for liquor...">
                 <button type="submit">Search</button>
             </form>
-            <article class="search-result">
-                <h3>Search Result</h3>
-                <p>Details about the liquor...</p>
-                <a href="liquor-looksee.html">View Details</a>
-            </article>
         </section>
     </main>
-    <footer>
-        <p>&copy; 2024 Liquor List. All rights reserved.</p>
-    </footer>
+    <script src="js/search.js"></script>
 </body>
 </html>
