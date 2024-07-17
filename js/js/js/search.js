@@ -1,27 +1,18 @@
 // js/search.js
 
-document.addEventListener('DOMContentLoaded', () => {
-    const searchForm = document.querySelector('form');
-
-    searchForm.addEventListener('submit', (event) => {
-        event.preventDefault();
-        const searchQuery = searchForm.querySelector('input').value;
-
-        fetch(`/api/search?query=${encodeURIComponent(searchQuery)}`)  // Replace with actual API endpoint
-            .then(response => response.json())
-            .then(data => {
-                const resultsContainer = document.getElementById('search-results');
-                resultsContainer.innerHTML = '';
-                data.results.forEach(result => {
-                    const resultDiv = document.createElement('div');
-                    resultDiv.classList.add('result');
-                    resultDiv.innerHTML = `
-                        <h3>${result.name}</h3>
-                        <button onclick="window.location.href='liquor-looksee.html?id=${result.id}'">View Details</button>
-                    `;
-                    resultsContainer.appendChild(resultDiv);
-                });
-            })
-            .catch(error => console.error('Error fetching search results:', error));
-    });
+document.getElementById('search-form').addEventListener('submit', (event) => {
+    event.preventDefault();
+    const query = document.getElementById('search-query').value;
+    fetch(`http://localhost:5001/api/search?query=${encodeURIComponent(query)}`)
+        .then(response => response.json())
+        .then(data => {
+            // Your code to handle the search results
+            const searchResults = document.getElementById('search-results');
+            searchResults.innerHTML = data.map(result => `
+                <li>
+                    <a href="liquor-looksee.html?id=${result.id}">${result.name}</a>
+                </li>
+            `).join('');
+        })
+        .catch(error => console.error('Error searching for liquors:', error));
 });
