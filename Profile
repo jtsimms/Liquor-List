@@ -7,30 +7,42 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <nav>
-        <div class="container">
-            <div class="logo"><a href="/">Liquor List</a></div>
-            <div class="menu">
-                <a href="/">Home</a>
-                <a href="/browse.html">Browse for Bottles</a>
-                <a href="/search.html">Search for Liquor</a>
-                <a href="/log.html">Log a Drink</a>
-                <a href="/profile.html">Profile</a>
+    <header>
+        <h1>Liquor List</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="browse.html">Browse for Bottles</a>
+            <a href="search.html">Search for Liquor</a>
+            <a href="liquor-looksee.html">Liquor Looksee</a>
+            <a href="log.html">Log a Drink</a>
+            <a href="profile.html">Profile</a>
+        </nav>
+    </header>
+    <main>
+        <section class="profile">
+            <h2>Your Profile</h2>
+            <div class="profile-info">
+                <h3>Username</h3>
+                <p>Bio...</p>
+                <h4>Your Favorites</h4>
+                <ul>
+                    <li><a href="liquor-looksee.html">Favorite Liquor 1</a></li>
+                    <li><a href="liquor-looksee.html">Favorite Liquor 2</a></li>
+                    <!-- More favorites -->
+                </ul>
             </div>
-        </div>
-    </nav>
-    <main class="profile-page">
-        <div class="profile-info">
-            <div class="profile-pic">
-                <img src="images/profile-pic.jpg" alt="Profile Picture">
-            </div>
-            <h3>User Name</h3>
-            <p>Bio: This is a short bio about the user.</p>
-            <div class="favorites">
-                <h4>Favorites</h4>
-                <!-- Favorite drinks will be listed here -->
-            </div>
-        </div>
+            <section class="buzz-buddies">
+                <h3>Buzz Buddies</h3>
+                <ul>
+                    <li><a href="#">Buzz Buddy 1</a></li>
+                    <li><a href="#">Buzz Buddy 2</a></li>
+                    <!-- More buddies -->
+                </ul>
+            </section>
+        </section>
     </main>
     <footer>
-        <p>&copy; 2024 Liquor List
+        <p>&copy; 2024 Liquor List. All rights reserved.</p>
+    </footer>
+</body>
+</html>
