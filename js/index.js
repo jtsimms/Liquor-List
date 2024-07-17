@@ -44,7 +44,7 @@ document.addEventListener("DOMContentLoaded", () => {
     // Render star ratings
     const renderStars = (rating) => {
         let starsHtml = '';
-        for (let i = 1; i <= 5; i++) {
+        for (let i = 1; i <= 10; i++) {
             starsHtml += i <= rating ? '★' : '☆';
         }
         return starsHtml;
