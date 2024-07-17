@@ -7,36 +7,32 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <nav>
-        <div class="container">
-            <div class="logo"><a href="/">Liquor List</a></div>
-            <div class="menu">
-                <a href="/">Home</a>
-                <a href="/browse.html">Browse for Bottles</a>
-                <a href="/search.html">Search for Liquor</a>
-                <a href="/log.html">Log a Drink</a>
-                <a href="/profile.html">Profile</a>
+    <header>
+        <h1>Liquor List</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="browse.html">Browse for Bottles</a>
+            <a href="search.html">Search for Liquor</a>
+            <a href="liquor-looksee.html">Liquor Looksee</a>
+            <a href="log.html">Log a Drink</a>
+            <a href="profile.html">Profile</a>
+        </nav>
+    </header>
+    <main>
+        <section class="liquor-details">
+            <h2>Liquor Looksee</h2>
+            <img src="liquor-image.jpg" alt="Liquor Image">
+            <h3>Liquor Name</h3>
+            <p>Description of the liquor...</p>
+            <div class="rating">
+                <!-- Rating stars will be inserted here -->
             </div>
-        </div>
-    </nav>
-    <main class="liquor-looksee-page">
-        <h2>Liquor Looksee</h2>
-        <div class="liquor-details">
-            <div class="liquor-image">
-                <img src="images/liquor.jpg" alt="Liquor Image">
+            <div class="availability">
+                <h4>Find This Liquor Near You</h4>
+                <p>Closest store information...</p>
             </div>
-            <div class="liquor-info">
-                <h3>Liquor Name</h3>
-                <p>Type: Liquor</p>
-                <p>Brand: Brand Name</p>
-                <p>ABV: 40%</p>
-                <p>Description: This is a detailed description of the liquor.</p>
-                <p class="liquor-rating">Rating: ★★★★★★★☆☆☆ (7/10)</p>
-                <div class="availability">
-                    <p>Available at: Closest Store Name</p>
-                </div>
-            </div>
-        </div>
+            <button>Scan Barcode</button>
+        </section>
     </main>
     <footer>
         <p>&copy; 2024 Liquor List. All rights reserved.</p>
