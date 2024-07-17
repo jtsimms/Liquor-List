@@ -3,30 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Liquor List | Search for Liquor</title>
+    <title>Search Liquors</title>
     <link rel="stylesheet" href="styles.css">
-    <script defer src="js/search.js"></script>
 </head>
 <body>
     <header>
-        <h1>Liquor List</h1>
+        <h1>Search Liquors</h1>
         <nav>
             <a href="index.html">Home</a>
-            <a href="browse.html">Browse for Bottles</a>
-            <a href="search.html">Search for Liquor</a>
-            <a href="log.html">Log a Drink</a>
+            <a href="browse.html">Browse Liquors</a>
+            <a href="search.html">Search Liquors</a>
             <a href="profile.html">Profile</a>
         </nav>
     </header>
-    <main id="search">
-        <h2>Search for Liquor</h2>
-        <form>
-            <input type="text" placeholder="Enter liquor name" />
+    <main id="content">
+        <form id="search-form">
+            <input type="text" id="search-query" placeholder="Search for a liquor...">
             <button type="submit">Search</button>
         </form>
+        <ul id="search-results">
+            <!-- Search results will be injected here by JavaScript -->
+        </ul>
     </main>
-    <footer>
-        <p>&copy; 2024 Liquor List. All rights reserved.</p>
-    </footer>
+    <script src="js/search.js"></script>
 </body>
 </html>
