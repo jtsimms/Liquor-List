@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Liquor List - Log a Drink</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Liquor List | Log a Drink</title>
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
     <header>
@@ -12,27 +12,28 @@
         <nav>
             <a href="index.html">Home</a>
             <a href="browse.html">Browse for Bottles</a>
-            <a href="search.html">Search for Liquor</a>
-            <a href="liquor-looksee.html">Liquor Looksee</a>
+            <a href="search.html">Search</a>
             <a href="log.html">Log a Drink</a>
             <a href="profile.html">Profile</a>
         </nav>
     </header>
     <main>
-        <section class="log">
+        <section id="log">
             <h2>Log a Drink</h2>
             <form>
-                <input type="text" placeholder="Drink Name">
-                <textarea placeholder="Write your review here..."></textarea>
-                <div class="rating">
-                    <!-- Rating stars will be inserted here -->
-                </div>
-                <button type="submit">Submit</button>
+                <label for="liquor-name">Liquor Name:</label>
+                <input type="text" name="liquor-name" placeholder="Enter the name of the liquor">
+
+                <label for="rating">Rating (1-10):</label>
+                <input type="number" name="rating" min="1" max="10" placeholder="Rate out of 10">
+
+                <label for="review">Review:</label>
+                <textarea name="review" placeholder="Write your review here..."></textarea>
+
+                <button type="submit">Log Drink</button>
             </form>
         </section>
     </main>
-    <footer>
-        <p>&copy; 2024 Liquor List. All rights reserved.</p>
-    </footer>
+    <script src="js/log.js"></script>
 </body>
 </html>
