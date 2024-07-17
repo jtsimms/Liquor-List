@@ -1,20 +1,16 @@
 // js/profile.js
 
 document.addEventListener('DOMContentLoaded', () => {
-    const profileInfo = document.getElementById('profile-info');
-
-    // Fetch user profile details
-    fetch('/api/user/profile')  // Replace with actual API endpoint
+    fetch('http://localhost:5001/api/user/profile')
         .then(response => response.json())
         .then(data => {
-            profileInfo.innerHTML = `
+            // Your code to handle the user profile
+            const profileSection = document.getElementById('profile');
+            profileSection.innerHTML = `
                 <h2>${data.username}</h2>
-                <p>Bio: ${data.bio}</p>
-                <h3>Favorites</h3>
-                <ul>
-                    ${data.favorites.map(favorite => `<li>${favorite}</li>`).join('')}
-                </ul>
+                <p><strong>Bio:</strong> ${data.bio}</p>
+                <p><strong>Favorites:</strong> ${data.favorites.join(', ')}</p>
             `;
         })
-        .catch(error => console.error('Error fetching profile:', error));
+        .catch(error => console.error('Error fetching user profile:', error));
 });
