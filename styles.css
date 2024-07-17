@@ -64,6 +64,17 @@ footer {
     margin: 10px 0;
 }
 
+/* No Reviews Message */
+.no-reviews {
+    background-color: #fff; /* White background */
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    color: #8a5a3c; /* Light brown */
+    font-weight: bold;
+}
+
 /* Browse for Bottles */
 .browsing {
     background-color: #fff; /* White background for browsing */
@@ -131,72 +142,34 @@ footer {
 }
 
 /* Log a Drink */
-.log {
-    background-color: #fff;
-    padding: 15px;
-    border-radius: 10px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-}
-
-.log form {
+.log-drink form {
     display: flex;
     flex-direction: column;
 }
 
-.log form textarea {
+.log-drink form input,
+.log-drink form textarea,
+.log-drink form button {
     padding: 10px;
     margin-bottom: 10px;
 }
 
-/* Profile Page */
+.log-drink form button {
+    background-color: #8a5a3c;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.log-drink form button:hover {
+    background-color: #6a3a2b;
+}
+
+/* Profile */
 .profile {
     background-color: #fff;
     padding: 15px;
     border-radius: 10px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-}
-
-.profile-info {
-    margin-bottom: 20px;
-}
-
-.profile-info h4 {
-    margin: 10px 0 5px;
-}
-
-.profile-info ul {
-    list-style: none;
-    padding: 0;
-}
-
-.profile-info li {
-    margin-bottom: 10px;
-}
-
-.buzz-buddies {
-    margin-top: 20px;
-}
-
-.buzz-buddies h3 {
-    margin-bottom: 10px;
-}
-
-.buzz-buddies ul {
-    list-style: none;
-    padding: 0;
-}
-
-.buzz-buddies li {
-    margin-bottom: 10px;
-}
-
-/* Rating System */
-.rating {
-    display: flex;
-}
-
-.rating img {
-    width: 20px;
-    height: 20px;
-    margin-right: 2px;
 }
