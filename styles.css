@@ -1,383 +1,202 @@
-/* Reset some default styles */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Georgia', serif;
-}
-
 /* General Styles */
 body {
-    background-color: #f7f2e5; /* Warm beige background */
-    color: #3b3b3b; /* Dark gray text */
-    line-height: 1.6;
+    font-family: 'Arial', sans-serif;
+    background-color: #f0e4d7; /* Light beige background */
+    color: #3c2a1f; /* Dark brown text */
+    margin: 0;
+    padding: 0;
 }
 
-/* Navigation Bar */
+header {
+    background-color: #3c2a1f; /* Dark brown */
+    color: #f0e4d7; /* Light beige */
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+header h1 {
+    margin: 0;
+}
+
 nav {
-    background-color: #5c3a3a; /* Dark wood color */
-    color: #fff;
-    padding: 20px 0;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    z-index: 1000;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    margin-top: 10px;
 }
 
-nav .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 15px;
-}
-
-nav .logo {
-    font-size: 28px;
-    font-weight: bold;
-    color: #f4e1d2; /* Light beige text */
-    text-shadow: 1px 1px 2px #3b3b3b;
-}
-
-nav .logo a {
-    color: inherit;
-    text-decoration: none;
-}
-
-nav .menu {
-    display: flex;
-    gap: 15px;
-}
-
-nav .menu a {
-    color: #f4e1d2; /* Light beige text */
+nav a {
+    color: #f0e4d7;
     text-decoration: none;
     padding: 10px 15px;
+}
+
+nav a:hover {
+    background-color: #8a5a3c; /* Slightly lighter brown */
     border-radius: 5px;
 }
 
-nav .menu a:hover {
-    background-color: #7a5c5c; /* Hover effect: slightly lighter brown */
+main {
+    padding: 20px;
 }
 
-/* Main Page */
-.main-page {
-    padding: 80px 15px 15px;
+footer {
+    background-color: #3c2a1f;
+    color: #f0e4d7;
+    padding: 10px;
     text-align: center;
-}
-
-.main-page h1 {
-    font-size: 40px;
-    color: #5c3a3a; /* Dark wood color */
-    margin-bottom: 20px;
-    text-shadow: 1px 1px 2px #f4e1d2;
-}
-
-.main-page .search-bar {
-    margin-bottom: 30px;
-}
-
-.main-page .search-bar input {
-    padding: 12px;
+    position: absolute;
+    bottom: 0;
     width: 100%;
-    max-width: 600px;
-    border: 1px solid #a68a74; /* Light brown border */
-    border-radius: 5px;
-    background-color: #fff;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
-.main-page .search-bar input::placeholder {
-    color: #a68a74;
-}
-
-.main-page .social-feed {
-    margin-top: 20px;
-}
-
-.main-page .social-feed .review {
-    background-color: #fff;
-    border-radius: 5px;
+/* Social Feed */
+.feed {
+    background-color: #fff; /* White background for feed */
     padding: 15px;
-    margin-bottom: 15px;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
-.main-page .social-feed .review .review-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 10px;
+.review {
+    margin-bottom: 20px;
 }
 
-.main-page .social-feed .review .review-header .user-name {
-    font-weight: bold;
-}
-
-.main-page .social-feed .review .review-header .review-date {
-    color: #a68a74;
-    font-size: 14px;
-}
-
-.main-page .social-feed .review .review-content {
-    margin-bottom: 10px;
-}
-
-.main-page .social-feed .review .review-content .review-text {
-    margin-bottom: 10px;
-}
-
-.main-page .social-feed .review .review-content .review-rating {
-    color: #f39c12;
+.rating {
+    margin: 10px 0;
 }
 
 /* Browse for Bottles */
-.browse-page {
-    padding: 80px 15px 15px;
-}
-
-.browse-page h2 {
-    font-size: 32px;
-    color: #5c3a3a; /* Dark wood color */
-    margin-bottom: 20px;
-    text-shadow: 1px 1px 2px #f4e1d2;
-}
-
-.browse-page .bottle-list {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 15px;
-}
-
-.browse-page .bottle-list .bottle-item {
-    background-color: #fff;
-    border-radius: 5px;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.2);
-    overflow: hidden;
-    width: calc(33.333% - 10px);
-}
-
-.browse-page .bottle-list .bottle-item img {
-    width: 100%;
-    height: 200px; /* Fixed height for images */
-    object-fit: cover;
-}
-
-.browse-page .bottle-list .bottle-item .bottle-info {
+.browsing {
+    background-color: #fff; /* White background for browsing */
     padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
-.browse-page .bottle-list .bottle-item .bottle-info h3 {
-    font-size: 18px;
-    color: #5c3a3a;
-    margin-bottom: 10px;
+.bottle img {
+    max-width: 100px;
+    border-radius: 5px;
 }
 
-.browse-page .bottle-list .bottle-item .bottle-info p {
-    margin-bottom: 5px;
+.bottle a {
+    text-decoration: none;
+    color: #3c2a1f;
 }
 
-.browse-page .bottle-list .bottle-item .bottle-info .bottle-rating {
-    color: #f39c12;
+.bottle a:hover {
+    text-decoration: underline;
 }
 
 /* Search for Liquor */
-.search-page {
-    padding: 80px 15px 15px;
-}
-
-.search-page h2 {
-    font-size: 32px;
-    color: #5c3a3a;
-    margin-bottom: 20px;
-    text-shadow: 1px 1px 2px #f4e1d2;
-}
-
-.search-page .search-bar {
-    margin-bottom: 30px;
-}
-
-.search-page .search-bar input {
-    padding: 12px;
-    width: 100%;
-    max-width: 600px;
-    border: 1px solid #a68a74;
-    border-radius: 5px;
+.search {
     background-color: #fff;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.search form {
+    display: flex;
+    flex-direction: column;
+}
+
+.search form input {
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.search form button {
+    padding: 10px;
+    background-color: #8a5a3c;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.search form button:hover {
+    background-color: #6a3a2b;
 }
 
 /* Liquor Looksee */
-.liquor-looksee-page {
-    padding: 80px 15px 15px;
+.liquor-details {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
-.liquor-looksee-page h2 {
-    font-size: 32px;
-    color: #5c3a3a;
-    margin-bottom: 20px;
-    text-shadow: 1px 1px 2px #f4e1d2;
-}
-
-.liquor-looksee-page .liquor-details {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-}
-
-.liquor-looksee-page .liquor-details .liquor-image {
-    width: 30%;
-}
-
-.liquor-looksee-page .liquor-details .liquor-image img {
-    width: 100%;
-    height: auto;
-}
-
-.liquor-looksee-page .liquor-details .liquor-info {
-    width: 70%;
-}
-
-.liquor-looksee-page .liquor-details .liquor-info h3 {
-    font-size: 24px;
-    color: #5c3a3a;
-    margin-bottom: 15px;
-}
-
-.liquor-looksee-page .liquor-details .liquor-info p {
-    margin-bottom: 10px;
-}
-
-.liquor-looksee-page .liquor-details .liquor-info .liquor-rating {
-    color: #f39c12;
-}
-
-.liquor-looksee-page .liquor-details .liquor-info .availability {
-    margin-top: 20px;
-}
-
-.liquor-looksee-page .liquor-details .liquor-info .availability p {
-    font-weight: bold;
-}
-
-/* Profile Page */
-.profile-page {
-    padding: 80px 15px 15px;
-}
-
-.profile-page h2 {
-    font-size: 32px;
-    color: #5c3a3a;
-    margin-bottom: 20px;
-    text-shadow: 1px 1px 2px #f4e1d2;
-}
-
-.profile-page .profile-info {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.profile-page .profile-info .profile-pic {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    overflow: hidden;
-    margin-bottom: 20px;
-}
-
-.profile-page .profile-info .profile-pic img {
-    width: 100%;
-    height: 100%;
-}
-
-.profile-page .profile-info h3 {
-    font-size: 24px;
-    color: #5c3a3a;
-    margin-bottom: 10px;
-}
-
-.profile-page .profile-info p {
-    margin-bottom: 10px;
-}
-
-.profile-page .profile-info .favorites {
-    margin-top: 20px;
-}
-
-.profile-page .profile-info .favorites h4 {
-    font-size: 20px;
-    color: #5c3a3a;
-    margin-bottom: 10px;
+.liquor-details img {
+    max-width: 200px;
+    border-radius: 5px;
 }
 
 /* Log a Drink */
-.log-drink-page {
-    padding: 80px 15px 15px;
-}
-
-.log-drink-page h2 {
-    font-size: 32px;
-    color: #5c3a3a;
-    margin-bottom: 20px;
-    text-shadow: 1px 1px 2px #f4e1d2;
-}
-
-.log-drink-page form {
+.log {
     background-color: #fff;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
-.log-drink-page form input, 
-.log-drink-page form textarea, 
-.log-drink-page form select {
-    display: block;
-    width: 100%;
-    padding: 12px;
-    margin-bottom: 15px;
-    border: 1px solid #a68a74;
-    border-radius: 5px;
-    background-color: #f7f2e5;
-}
-
-.log-drink-page form textarea {
-    height: 100px;
-}
-
-/* Star Rating System */
-.star-rating {
+.log form {
     display: flex;
-    justify-content: center;
-    gap: 5px;
+    flex-direction: column;
+}
+
+.log form textarea {
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+/* Profile Page */
+.profile {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.profile-info {
     margin-bottom: 20px;
 }
 
-.star-rating .star {
-    font-size: 24px;
-    color: #f39c12;
+.profile-info h4 {
+    margin: 10px 0 5px;
 }
 
-.star-rating .star.empty {
-    color: #ddd;
+.profile-info ul {
+    list-style: none;
+    padding: 0;
 }
 
-/* Footer */
-footer {
-    background-color: #5c3a3a;
-    color: #f4e1d2;
-    padding: 20px 0;
-    position: relative;
-    bottom: 0;
-    width: 100%;
-    text-align: center;
-    box-shadow: 0 -4px 8px rgba(0,0,0,0.2);
+.profile-info li {
+    margin-bottom: 10px;
 }
 
-footer p {
-    margin: 0;
-    font-size: 14px;
+.buzz-buddies {
+    margin-top: 20px;
+}
+
+.buzz-buddies h3 {
+    margin-bottom: 10px;
+}
+
+.buzz-buddies ul {
+    list-style: none;
+    padding: 0;
+}
+
+.buzz-buddies li {
+    margin-bottom: 10px;
+}
+
+/* Rating System */
+.rating {
+    display: flex;
+}
+
+.rating img {
+    width: 20px;
+    height: 20px;
+    margin-right: 2px;
 }
