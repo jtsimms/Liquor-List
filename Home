@@ -7,50 +7,29 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Navigation Bar -->
-    <nav class="navbar">
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#browse">Browse for Bottles</a></li>
-            <li><a href="#search">Search for Liquor</a></li>
-            <li><a href="#profile">Profile</a></li>
-            <li><a href="#log">Log a Drink</a></li>
-        </ul>
-    </nav>
-
-    <!-- Main Content -->
-    <div class="container">
-        <!-- Review Feed -->
-        <section id="feed">
-            <h1>Recent Reviews</h1>
-            
-            <!-- Review Post -->
-            <div class="review-post">
-                <div class="user-info">
-                    <img src="user1.jpg" alt="User Profile Picture" class="profile-pic">
-                    <span class="username">User1</span>
-                </div>
-                <div class="review-content">
-                    <h2>Beverage Name</h2>
-                    <p>This is a review text. The user shares their thoughts on the beverage.</p>
-                    <div class="rating">Rating: ★★★★★☆☆☆☆☆</div>
-                    <img src="beverage1.jpg" alt="Beverage Image" class="beverage-pic">
-                </div>
-                <div class="interaction-buttons">
-                    <button class="like-btn">Like</button>
-                    <button class="dislike-btn">Dislike</button>
-                    <button class="comment-btn">Comment</button>
-                </div>
-                <div class="comments-section">
-                    <!-- Comments will be dynamically loaded here -->
-                </div>
+    <nav>
+        <div class="container">
+            <div class="logo"><a href="/">Liquor List</a></div>
+            <div class="menu">
+                <a href="/">Home</a>
+                <a href="/browse.html">Browse for Bottles</a>
+                <a href="/search.html">Search for Liquor</a>
+                <a href="/log.html">Log a Drink</a>
+                <a href="/profile.html">Profile</a>
             </div>
-            
-            <!-- More review posts can be added in a similar way -->
-        </section>
-    </div>
-
-    <!-- JavaScript -->
-    <script src="script.js"></script>
+        </div>
+    </nav>
+    <main class="main-page">
+        <h1>Welcome to Liquor List!</h1>
+        <div class="search-bar">
+            <input type="text" placeholder="Search for bottles, reviews, or friends...">
+        </div>
+        <div class="social-feed">
+            <!-- Social feed content will go here -->
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Liquor List. All rights reserved.</p>
+    </footer>
 </body>
 </html>
