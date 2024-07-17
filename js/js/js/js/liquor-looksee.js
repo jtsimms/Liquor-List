@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", () => {
     // Example data for liquor details
     const liquorDetails = {
         name: 'Whiskey',
-        rating: 4.5,
+        rating: 7,
         description: 'A smooth and rich whiskey with hints of vanilla and oak.',
         storeLocation: 'Local Liquor Store, 123 Main St.'
     };
