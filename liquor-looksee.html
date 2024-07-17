@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Liquor List - Liquor Looksee</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Liquor List | Liquor Looksee</title>
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
     <header>
@@ -12,30 +12,20 @@
         <nav>
             <a href="index.html">Home</a>
             <a href="browse.html">Browse for Bottles</a>
-            <a href="search.html">Search for Liquor</a>
-            <a href="liquor-looksee.html">Liquor Looksee</a>
+            <a href="search.html">Search</a>
             <a href="log.html">Log a Drink</a>
             <a href="profile.html">Profile</a>
         </nav>
     </header>
     <main>
-        <section class="liquor-details">
-            <h2>Liquor Looksee</h2>
-            <img src="liquor-image.jpg" alt="Liquor Image">
-            <h3>Liquor Name</h3>
-            <p>Description of the liquor...</p>
-            <div class="rating">
-                <!-- Rating stars will be inserted here -->
-            </div>
-            <div class="availability">
-                <h4>Find This Liquor Near You</h4>
-                <p>Closest store information...</p>
-            </div>
-            <button>Scan Barcode</button>
+        <section id="liquor-details">
+            <h2 id="liquor-name">Liquor Name</h2>
+            <div id="liquor-rating"></div>
+            <p id="liquor-description">Description of the liquor.</p>
+            <p id="store-location">Store location</p>
         </section>
+        <button id="scan-barcode">Scan Barcode</button>
     </main>
-    <footer>
-        <p>&copy; 2024 Liquor List. All rights reserved.</p>
-    </footer>
+    <script src="js/liquor-looksee.js"></script>
 </body>
 </html>
