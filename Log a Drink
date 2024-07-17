@@ -8,45 +8,29 @@
 </head>
 <body>
     <header>
-        <h1>Log a Drink</h1>
+        <h1>Liquor List</h1>
         <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="browse.html">Browse for Bottles</a></li>
-                <li><a href="search.html">Search for Liquor</a></li>
-                <li><a href="profile.html">Profile</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
+            <a href="index.html">Home</a>
+            <a href="browse.html">Browse for Bottles</a>
+            <a href="search.html">Search for Liquor</a>
+            <a href="liquor-looksee.html">Liquor Looksee</a>
+            <a href="log.html">Log a Drink</a>
+            <a href="profile.html">Profile</a>
         </nav>
     </header>
-
     <main>
-        <section id="log-form">
-            <h2>Log a New Drink</h2>
-            <form action="submit_log.html" method="post">
-                <label for="drink-name">Drink Name:</label>
-                <input type="text" id="drink-name" name="drink-name" required>
-
-                <label for="drink-type">Type:</label>
-                <select id="drink-type" name="drink-type">
-                    <option value="beer">Beer</option>
-                    <option value="wine">Wine</option>
-                    <option value="liquor">Liquor</option>
-                    <option value="alc-beverage">Alcoholic Beverage</option>
-                </select>
-
-                <label for="rating">Rating:</label>
-                <input type="number" id="rating" name="rating" min="0" max="10" step="0.1" required>
-
-                <label for="review">Review:</label>
-                <textarea id="review" name="review" rows="4" required></textarea>
-
+        <section class="log">
+            <h2>Log a Drink</h2>
+            <form>
+                <input type="text" placeholder="Drink Name">
+                <textarea placeholder="Write your review here..."></textarea>
+                <div class="rating">
+                    <!-- Rating stars will be inserted here -->
+                </div>
                 <button type="submit">Submit</button>
             </form>
         </section>
     </main>
-
     <footer>
         <p>&copy; 2024 Liquor List. All rights reserved.</p>
     </footer>
