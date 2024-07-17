@@ -1,26 +1,27 @@
 // js/log.js
 
-document.addEventListener('DOMContentLoaded', () => {
-    const logForm = document.querySelector('form');
+document.getElementById('review-form').addEventListener('submit', (event) => {
+    event.preventDefault();
+    const liquorName = document.getElementById('liquor-name').value;
+    const rating = document.getElementById('rating').value;
+    const review = document.getElementById('review').value;
 
-    logForm.addEventListener('submit', (event) => {
-        event.preventDefault();
-        const formData = new FormData(logForm);
-        const liquorName = formData.get('liquor-name');
-        const rating = formData.get('rating');
-        const review = formData.get('review');
-
-        // Post the new review
-        fetch('/api/reviews', {  // Replace with actual API endpoint
-            method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({ liquorName, rating, review })
+    fetch('http://localhost:5001/api/reviews', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({
+            liquorName: liquorName,
+            rating: parseInt(rating, 10),
+            review: review
         })
+    })
         .then(response => response.json())
         .then(data => {
-            alert('Your review has been submitted!');
-            logForm.reset();
+            // Your code to handle the review submission response
+            console.log('Review submitted:', data.message);
+            alert('Review submitted!');
         })
         .catch(error => console.error('Error submitting review:', error));
-    });
 });
