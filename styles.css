@@ -1,18 +1,20 @@
+/* css/styles.css */
+
 /* General Styles */
 body {
-    font-family: 'Arial', sans-serif;
-    background-color: #f0e4d7; /* Light beige background */
-    color: #3c2a1f; /* Dark brown text */
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
     margin: 0;
     padding: 0;
 }
 
 header {
-    background-color: #3c2a1f; /* Dark brown */
-    color: #f0e4d7; /* Light beige */
-    padding: 20px;
+    background: #5a2a2a;
+    color: #fff;
+    padding: 1rem;
     text-align: center;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
 }
 
 header h1 {
@@ -24,152 +26,130 @@ nav {
 }
 
 nav a {
-    color: #f0e4d7;
+    color: #fff;
+    margin: 0 10px;
     text-decoration: none;
-    padding: 10px 15px;
 }
 
 nav a:hover {
-    background-color: #8a5a3c; /* Slightly lighter brown */
-    border-radius: 5px;
-}
-
-main {
-    padding: 20px;
-}
-
-footer {
-    background-color: #3c2a1f;
-    color: #f0e4d7;
-    padding: 10px;
-    text-align: center;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-}
-
-/* Social Feed */
-.feed {
-    background-color: #fff; /* White background for feed */
-    padding: 15px;
-    border-radius: 10px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-}
-
-.review {
-    margin-bottom: 20px;
-}
-
-.rating {
-    margin: 10px 0;
-}
-
-/* No Reviews Message */
-.no-reviews {
-    background-color: #fff; /* White background */
-    padding: 15px;
-    border-radius: 10px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-    text-align: center;
-    color: #8a5a3c; /* Light brown */
-    font-weight: bold;
-}
-
-/* Browse for Bottles */
-.browsing {
-    background-color: #fff; /* White background for browsing */
-    padding: 15px;
-    border-radius: 10px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-}
-
-.bottle img {
-    max-width: 100px;
-    border-radius: 5px;
-}
-
-.bottle a {
-    text-decoration: none;
-    color: #3c2a1f;
-}
-
-.bottle a:hover {
     text-decoration: underline;
 }
 
-/* Search for Liquor */
-.search {
-    background-color: #fff;
-    padding: 15px;
-    border-radius: 10px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+main {
+    padding: 2rem;
 }
 
-.search form {
+button {
+    background-color: #5a2a2a;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #3e1b1b;
+}
+
+/* Homepage */
+#feed {
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.review {
+    background: #eee;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.review h3 {
+    margin: 0;
+    color: #5a2a2a;
+}
+
+.review .rating {
+    color: #f5c518;
+    font-size: 1.2em;
+}
+
+.like-button, .dislike-button {
+    margin-right: 5px;
+}
+
+/* Browse Page */
+#browse {
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.liquor a {
+    display: block;
+    padding: 10px;
+    background: #f4f4f4;
+    border-radius: 5px;
+    color: #5a2a2a;
+    text-decoration: none;
+    margin-bottom: 10px;
+}
+
+.liquor a:hover {
+    background: #ddd;
+}
+
+/* Search Page */
+#search {
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form {
     display: flex;
     flex-direction: column;
 }
 
-.search form input {
-    padding: 10px;
+input, textarea, button {
     margin-bottom: 10px;
 }
 
-.search form button {
-    padding: 10px;
-    background-color: #8a5a3c;
-    color: #fff;
-    border: none;
+/* Liquor Looksee Page */
+#liquor-details {
+    background: #fff;
+    padding: 20px;
     border-radius: 5px;
-    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.search form button:hover {
-    background-color: #6a3a2b;
+#liquor-name {
+    color: #5a2a2a;
 }
 
-/* Liquor Looksee */
-.liquor-details {
-    background-color: #fff;
-    padding: 15px;
-    border-radius: 10px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+#liquor-rating {
+    color: #f5c518;
+    font-size: 1.5em;
 }
 
-.liquor-details img {
-    max-width: 200px;
+/* Log Page */
+#log {
+    background: #fff;
+    padding: 20px;
     border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-/* Log a Drink */
-.log-drink form {
-    display: flex;
-    flex-direction: column;
-}
-
-.log-drink form input,
-.log-drink form textarea,
-.log-drink form button {
-    padding: 10px;
-    margin-bottom: 10px;
-}
-
-.log-drink form button {
-    background-color: #8a5a3c;
-    color: #fff;
-    border: none;
+/* Profile Page */
+#profile-info {
+    background: #fff;
+    padding: 20px;
     border-radius: 5px;
-    cursor: pointer;
-}
-
-.log-drink form button:hover {
-    background-color: #6a3a2b;
-}
-
-/* Profile */
-.profile {
-    background-color: #fff;
-    padding: 15px;
-    border-radius: 10px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
