@@ -7,26 +7,30 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <nav>
-        <div class="container">
-            <div class="logo"><a href="/">Liquor List</a></div>
-            <div class="menu">
-                <a href="/">Home</a>
-                <a href="/browse.html">Browse for Bottles</a>
-                <a href="/search.html">Search for Liquor</a>
-                <a href="/log.html">Log a Drink</a>
-                <a href="/profile.html">Profile</a>
-            </div>
-        </div>
-    </nav>
-    <main class="search-page">
-        <h2>Search for Liquor</h2>
-        <div class="search-bar">
-            <input type="text" placeholder="Enter name, type, or brand...">
-        </div>
-        <div class="search-results">
-            <!-- Search results will go here -->
-        </div>
+    <header>
+        <h1>Liquor List</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="browse.html">Browse for Bottles</a>
+            <a href="search.html">Search for Liquor</a>
+            <a href="liquor-looksee.html">Liquor Looksee</a>
+            <a href="log.html">Log a Drink</a>
+            <a href="profile.html">Profile</a>
+        </nav>
+    </header>
+    <main>
+        <section class="search">
+            <h2>Search for Liquor</h2>
+            <form>
+                <input type="text" placeholder="Search for liquor">
+                <button type="submit">Search</button>
+            </form>
+            <article class="search-result">
+                <h3>Search Result</h3>
+                <p>Details about the liquor...</p>
+                <a href="liquor-looksee.html">View Details</a>
+            </article>
+        </section>
     </main>
     <footer>
         <p>&copy; 2024 Liquor List. All rights reserved.</p>
