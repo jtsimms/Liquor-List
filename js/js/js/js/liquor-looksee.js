@@ -1,37 +1,21 @@
 // js/liquor-looksee.js
 
-document.addEventListener("DOMContentLoaded", () => {
-    // Handle barcode scan (simulated)
-    document.querySelector('#scan-barcode').addEventListener('click', () => {
-        alert('Scanning barcode...');
-        // Implement actual barcode scanning functionality
-    });
+document.addEventListener('DOMContentLoaded', () => {
+    const params = new URLSearchParams(window.location.search);
+    const liquorId = params.get('id');
+    const liquorName = document.getElementById('liquor-name');
+    const liquorRating = document.getElementById('liquor-rating');
+    const liquorDescription = document.getElementById('liquor-description');
+    const storeLocation = document.getElementById('store-location');
 
-    // Example data for liquor details
-    const liquorDetails = {
-        name: 'Whiskey',
-        rating: 7,
-        description: 'A smooth and rich whiskey with hints of vanilla and oak.',
-        storeLocation: 'Local Liquor Store, 123 Main St.'
-    };
-
-    // Render liquor details
-    const renderLiquorDetails = () => {
-        document.querySelector('#liquor-name').textContent = liquorDetails.name;
-        document.querySelector('#liquor-rating').innerHTML = renderStars(liquorDetails.rating);
-        document.querySelector('#liquor-description').textContent = liquorDetails.description;
-        document.querySelector('#store-location').textContent = liquorDetails.storeLocation;
-    };
-
-    // Render star ratings
-    const renderStars = (rating) => {
-        let starsHtml = '';
-        for (let i = 1; i <= 10; i++) {
-            starsHtml += i <= rating ? '★' : '☆';
-        }
-        return starsHtml;
-    };
-
-    // Fetch and render liquor details
-    renderLiquorDetails();
+    // Fetch liquor details
+    fetch(`/api/liquors/${liquorId}`)  // Replace with actual API endpoint
+        .then(response => response.json())
+        .then(data => {
+            liquorName.textContent = data.name;
+            liquorDescription.textContent = data.description;
+            liquorRating.innerHTML = '★'.repeat(data.rating) + '☆'.repeat(10 - data.rating);
+            storeLocation.textContent = `Available at: ${data.storeLocation}`;
+        })
+        .catch(error => console.error('Error fetching liquor details:', error));
 });
