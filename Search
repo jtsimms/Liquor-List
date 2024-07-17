@@ -7,41 +7,27 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <h1>Search for Liquor</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="browse.html">Browse for Bottles</a></li>
-                <li><a href="search.html">Search for Liquor</a></li>
-                <li><a href="profile.html">Profile</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <main>
-        <section id="search-bar">
-            <h2>Search for Liquor</h2>
-            <input type="text" id="search-query" placeholder="Enter liquor name, type, or barcode...">
-            <button>Search</button>
-        </section>
-
-        <section id="search-results">
-            <h2>Search Results</h2>
-            <!-- Sample search result -->
-            <div class="search-result">
-                <img src="liquor_image.jpg" alt="Liquor Image">
-                <h3>Liquor Name</h3>
-                <p>Type: Liquor</p>
-                <p>Rating: ★★★★☆</p>
-                <a href="liquor_looksee.html">View Details</a>
+    <nav>
+        <div class="container">
+            <div class="logo"><a href="/">Liquor List</a></div>
+            <div class="menu">
+                <a href="/">Home</a>
+                <a href="/browse.html">Browse for Bottles</a>
+                <a href="/search.html">Search for Liquor</a>
+                <a href="/log.html">Log a Drink</a>
+                <a href="/profile.html">Profile</a>
             </div>
-            <!-- Add more search results here -->
-        </section>
+        </div>
+    </nav>
+    <main class="search-page">
+        <h2>Search for Liquor</h2>
+        <div class="search-bar">
+            <input type="text" placeholder="Enter name, type, or brand...">
+        </div>
+        <div class="search-results">
+            <!-- Search results will go here -->
+        </div>
     </main>
-
     <footer>
         <p>&copy; 2024 Liquor List. All rights reserved.</p>
     </footer>
